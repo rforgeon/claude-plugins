@@ -1,0 +1,24 @@
+{
+  "name": "swyx-plugins",
+  "owner": {
+    "name": "swyx",
+    "email": "shawnthe1@gmail.com"
+  },
+  "metadata": {
+    "description": "swyx's Claude Cowork plugins — automation workflows for content creation, publishing, and more.",
+    "version": "0.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "latent-space-youtube",
+      "source": "./plugins/latent-space-youtube",
+      "description": "End-to-end pipeline for downloading Zoom cloud recordings and publishing them to YouTube with auto-generated titles, descriptions, timestamps, playlists, and AI-generated thumbnails via Gemini.",
+      "version": "0.1.0",
+      "author": {
+        "name": "swyx"
+      },
+      "keywords": ["youtube", "zoom", "thumbnails", "gemini", "video", "latent-space"]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "latent-space-youtube",
+  "version": "0.1.0",
+  "description": "End-to-end pipeline for downloading Zoom cloud recordings and publishing them to YouTube with auto-generated titles, descriptions, timestamps, playlists, and AI-generated thumbnails via Gemini.",
+  "author": {
+    "name": "swyx"
+  },
+  "repository": "https://github.com/swyxio/claude-plugins",
+  "license": "MIT",
+  "keywords": ["youtube", "zoom", "thumbnails", "gemini", "video", "latent-space"]
+}
