@@ -28,6 +28,8 @@
       "Thumbnail generation guidance",
       "Human checkpoint review"
     ],
-    "defaultPrompt": "Help me review and publish recent Zoom recordings to YouTube."
+    "defaultPrompt": [
+      "Review recent Zoom recordings for YouTube."
+    ]
   }
 }
