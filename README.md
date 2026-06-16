@@ -24,7 +24,7 @@ In Codex CLI:
 codex plugin marketplace add swyxio/claude-plugins
 ```
 
-Then open Codex, run `/plugins`, choose the `swyx Plugins` marketplace, and install the plugin.
+Then open the Codex Plugins UI, choose the `swyx Plugins` marketplace, and install the plugin.
 
 ### Install a plugin
 
