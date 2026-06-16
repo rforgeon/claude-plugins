@@ -46,6 +46,22 @@ In Claude Cowork or Claude Code, the skills are available after installing the p
 - *"Set up titles and publish these videos"* → triggers `youtube-publish`
 - *"Generate thumbnails for the videos I just uploaded"* → triggers `youtube-thumbnails`
 
+## Codex and Telvine
+
+This plugin also includes Codex metadata in `.codex-plugin/plugin.json`; the
+same `skills/` directory is used by Claude Cowork, Claude Code, and Codex.
+
+To inspect the workflow with Telvine's CLI:
+
+```bash
+npm i -g telvine
+telvine login
+telvine publish ./skills/zoom-to-youtube --skill-id skl_yourworkflow --dry-run
+```
+
+Human review scenarios live under `evals/youtube-workflow/`. Use them to compare
+agent outputs before publishing workflow changes.
+
 ## License
 
 MIT

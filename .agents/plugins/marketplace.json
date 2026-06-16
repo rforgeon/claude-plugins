@@ -1,0 +1,20 @@
+{
+  "name": "swyx-plugins-codex",
+  "interface": {
+    "displayName": "swyx Plugins"
+  },
+  "plugins": [
+    {
+      "name": "latent-space-youtube",
+      "source": {
+        "source": "local",
+        "path": "./plugins/latent-space-youtube"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

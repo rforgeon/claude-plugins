@@ -1,0 +1,33 @@
+{
+  "name": "latent-space-youtube",
+  "version": "0.1.0",
+  "description": "End-to-end Zoom-to-YouTube publishing workflow for Latent Space recordings.",
+  "author": {
+    "name": "swyx"
+  },
+  "repository": "https://github.com/swyxio/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "youtube",
+    "zoom",
+    "thumbnails",
+    "gemini",
+    "video",
+    "latent-space"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Latent Space YouTube",
+    "shortDescription": "Publish Zoom recordings to YouTube with metadata and thumbnails.",
+    "longDescription": "Latent Space YouTube packages the Zoom download, YouTube publish, thumbnail generation, and orchestrated checkpoint workflow as an installable Codex plugin.",
+    "developerName": "swyx",
+    "category": "Productivity",
+    "capabilities": [
+      "Zoom recording review",
+      "YouTube publishing workflow",
+      "Thumbnail generation guidance",
+      "Human checkpoint review"
+    ],
+    "defaultPrompt": "Help me review and publish recent Zoom recordings to YouTube."
+  }
+}
