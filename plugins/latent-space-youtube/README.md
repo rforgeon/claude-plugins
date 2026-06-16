@@ -62,6 +62,12 @@ telvine publish ./skills/zoom-to-youtube --skill-id skl_yourworkflow --dry-run
 Human review scenarios live under `evals/youtube-workflow/`. Use them to compare
 agent outputs before publishing workflow changes.
 
+When this workflow is published through Telvine, teams can track component-level
+usage in the Telvine dashboard. Use privacy-safe events such as `skill.invoked`,
+`skill.completed`, and `skill.error` with metadata like skill name, plugin
+version, checkpoint name, and eval case id. Do not send prompts, recordings,
+file contents, connector payloads, tool arguments, or model outputs.
+
 ## License
 
 MIT
