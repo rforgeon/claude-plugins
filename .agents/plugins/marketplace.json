@@ -1,5 +1,5 @@
 {
-  "name": "swyx-plugins-codex",
+  "name": "swyx-plugins",
   "interface": {
     "displayName": "swyx Plugins"
   },

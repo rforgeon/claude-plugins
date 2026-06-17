@@ -19,7 +19,7 @@
   "interface": {
     "displayName": "Latent Space YouTube",
     "shortDescription": "Publish Zoom recordings to YouTube with metadata and thumbnails.",
-    "longDescription": "Latent Space YouTube packages the Zoom download, YouTube publish, thumbnail generation, and orchestrated checkpoint workflow as an installable Codex plugin.",
+    "longDescription": "Latent Space YouTube packages the Zoom download, YouTube publish, thumbnail generation, and orchestrated checkpoint workflow as an installable agent plugin, with Codex metadata for the Codex install surface.",
     "developerName": "swyx",
     "category": "Productivity",
     "capabilities": [

@@ -19,7 +19,7 @@ In Claude Code CLI:
 
 In Claude Cowork: use the plugin browser to add `swyxio/claude-plugins` as a marketplace.
 
-In Codex CLI:
+For Codex, add the same marketplace:
 ```
 codex plugin marketplace add swyxio/claude-plugins
 ```
@@ -40,7 +40,7 @@ This repo is structured as a marketplace. To add a new plugin:
 2. Add `.claude-plugin/plugin.json` manifest
 3. Add skills, commands, agents as needed
 4. Update `.claude-plugin/marketplace.json` with the new plugin entry
-5. Add `.codex-plugin/plugin.json` and update `.agents/plugins/marketplace.json` if the plugin should also install in Codex
+5. Add harness-specific install metadata such as `.codex-plugin/plugin.json` and `.agents/plugins/marketplace.json` when the same plugin should install beyond Claude
 6. Add human review evals under `evals/` for important workflow behavior
 
 ## License

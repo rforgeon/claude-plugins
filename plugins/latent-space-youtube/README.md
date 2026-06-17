@@ -46,12 +46,14 @@ In Claude Cowork or Claude Code, the skills are available after installing the p
 - *"Set up titles and publish these videos"* → triggers `youtube-publish`
 - *"Generate thumbnails for the videos I just uploaded"* → triggers `youtube-thumbnails`
 
-## Codex and Telvine
+## Cross-harness distribution and Telvine
 
-This plugin also includes Codex metadata in `.codex-plugin/plugin.json`; the
-same `skills/` directory is used by Claude Cowork, Claude Code, and Codex.
+This plugin is the installable product. Claude Cowork, Claude Code, and Codex
+are install surfaces for the same underlying `skills/` directory. This PR adds
+Codex metadata in `.codex-plugin/plugin.json` without changing the Claude
+plugin shape.
 
-To inspect the workflow with Telvine's CLI:
+To inspect and publish the workflow with [Telvine](https://telvine.com):
 
 ```bash
 npm i -g telvine
@@ -60,10 +62,10 @@ telvine publish ./skills/zoom-to-youtube --skill-id skl_yourworkflow --dry-run
 ```
 
 Human review scenarios live under `evals/youtube-workflow/`. Use them to compare
-agent outputs before publishing workflow changes. When the workflow is published
+agent outputs before publishing workflow changes. When the plugin is published
 through Telvine, the same cases can pair with privacy-safe dashboard events so
-teams can see where the workflow is used, where it errors, and which checkpoints
-need better eval coverage.
+teams can measure the plugin product across harnesses, see where it errors, and
+identify which checkpoints need better eval coverage.
 
 Use events such as `skill.invoked`, `skill.completed`, and `skill.error` with
 metadata like skill name, plugin version, checkpoint name, and eval case id. Do
